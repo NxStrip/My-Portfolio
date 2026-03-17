@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[NxStrip] - Cybersecurity Enthusiast, Bug Hunter, and VAPT Specialist.">
-    <meta name="keywords" content="Cybersecurity, VAPT, Bug Bounty, Ethical Hacking, Linux, Networking">
     <title>[NxStrip] | Cybersecurity Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
-
-    </head>
+</head>
 <body>
 
     <header id="header">
         <div class="nav-container">
             <div class="logo">
-                <a href="#home">[NxStrip]</a>
+                <a href="index.html">[NxStrip]</a>
             </div>
             <nav id="navbar">
                 <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -43,8 +42,8 @@
                 <h1>Hello, I'm <span class="accent">[NxStrip]</span></h1>
                 <p class="tagline">Cybersecurity Enthusiast | Linux Specialist | VAPT & Bug Bounty</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="index.html#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
         </section>
@@ -60,95 +59,77 @@
                     </div>
                     <div class="about-text">
                         <p>
-                            I am a dedicated cybersecurity professional with a deep passion for understanding how systems work—and how they can be broken. My primary focus lies in Vulnerability Assessment and Penetration Testing (VAPT), Bug Bounty hunting, and securing network infrastructures. 
+                            I am a dedicated cybersecurity professional with a deep passion for understanding how systems work—and how they can be broken. My primary focus lies in Vulnerability Assessment and Penetration Testing (VAPT), Bug Bounty hunting, and securing network infrastructures.
                         </p>
                         <p>
                             With strong foundations in Linux environments and network protocols, I thrive in uncovering vulnerabilities and providing actionable solutions to mitigate risks. I actively participate in Capture The Flag (CTF) competitions to continuously sharpen my skills against real-world scenarios.
                         </p>
-                        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-download"></i> Download Resume</a>
                     </div>
-                </div>
-
-                <div class="skills-section">
-                    <h3>Core Competencies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
-                        <div class="skill-card"><i class="fas fa-network-wired"></i><span>Networking</span></div>
-                        <div class="skill-card"><i class="fas fa-shield-alt"></i><span>VAPT</span></div>
-                        <div class="skill-card"><i class="fas fa-bug"></i><span>Bug Bounty</span></div>
-                    </div>
-                </div>
-
-                <div class="achievements-section">
-                    <h3>CTF Achievements</h3>
-                    <p>Competed in 4 CTF events as a Team Captain, securing the following ranks:</p>
-                    <ul class="achievement-list">
-                        <li><strong>BITSCTF 2026:</strong> Rank 282 / 863 (400 points)</li>
-                        <li><strong>Batman’s Kitchen CTF 2026:</strong> Rank 87 / 526 (5257 points)</li>
-                        <li><strong>EHAX CTF 2026:</strong> Rank 218 / 887 (700 points)</li>
-                        <li><strong>UniVsThreats 26 Quals:</strong> Rank 121 / 565 (306 points)</li>
-                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects bg-light">
+        <section id="skills" class="skills bg-alt">
             <div class="section-container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-code"></i>
-                            <span>Coming Soon</span>
-                        </div>
-                        <div class="project-info">
-                            <h3>[Project Name 1]</h3>
-                            <p>[Coming Soon – Detailed write-up or tool description will be added here.]</p>
-                            <div class="project-tags">
-                                <span>VAPT</span>
-                                <span>Python</span>
-                            </div>
-                        </div>
-                    </article>
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-columns">
                     
-                    <article class="project-card">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-terminal"></i>
-                            <span>Coming Soon</span>
-                        </div>
-                        <div class="project-info">
-                            <h3>[Project Name 2]</h3>
-                            <p>[Coming Soon – Detailed write-up or tool description will be added here.]</p>
-                            <div class="project-tags">
-                                <span>Linux</span>
-                                <span>Networking</span>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="skill-col">
+                        <h3 class="col-title underline-cyan">Security</h3>
+                        <div class="skill-box border-cyan">Cybersecurity</div>
+                        <div class="skill-box border-cyan">Ethical Hacking</div>
+                        <div class="skill-box border-cyan">Network Security</div>
+                        <div class="skill-box border-cyan">VAPT</div>
+                        <div class="skill-box border-cyan">Cryptography</div>
+                    </div>
 
-                    <article class="project-card">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-bug"></i>
-                            <span>Coming Soon</span>
-                        </div>
-                        <div class="project-info">
-                            <h3>[Project Name 3]</h3>
-                            <p>[Coming Soon – Detailed write-up or tool description will be added here.]</p>
-                            <div class="project-tags">
-                                <span>Bug Bounty</span>
-                                <span>Web Sec</span>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="skill-col">
+                        <h3 class="col-title underline-purple">Programming & Scripting</h3>
+                        <div class="skill-box border-purple">Bash</div>
+                        <div class="skill-box border-purple">Java</div>
+                        <div class="skill-box border-purple">C</div>
+                        <div class="skill-box border-purple">PowerShell</div>
+                        <div class="skill-box border-purple">Python</div>
+                        <div class="skill-box border-purple">C++</div>
+                    </div>
+
+                    <div class="skill-col">
+                        <h3 class="col-title underline-green">Tools & Technologies</h3>
+                        <div class="skill-box border-green">AWS</div>
+                        <div class="skill-box border-green">Oracle SQL</div>
+                        <div class="skill-box border-green">MySQL</div>
+                        <div class="skill-box border-green">GitHub</div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="tech-stack" class="tech-stack">
+            <div class="section-container">
+                <div class="tech-title-wrap">
+                    <span class="code-tag">&lt;/Skills&gt;</span>
+                    <span class="line"></span>
+                </div>
+                <h3 class="tech-heading">Tech Stack</h3>
+                
+                <div class="tech-grid">
+                    <div class="tech-icon"><i class="fab fa-linux"></i></div>
+                    <div class="tech-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="tech-icon"><i class="fab fa-python"></i></div>
+                    <div class="tech-icon"><i class="fas fa-terminal"></i></div>
+                    <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="tech-icon"><i class="fas fa-bug"></i></div>
+                    <div class="tech-icon"><i class="fab fa-aws"></i></div>
+                    <div class="tech-icon"><i class="fas fa-database"></i></div>
+                    <div class="tech-icon"><i class="fab fa-github"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact bg-alt">
             <div class="section-container">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-intro">Whether you have a question, a project proposal, or just want to say hi, I'll try my best to get back to you!</p>
-                
                 <div class="contact-content">
                     <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
                         <div class="form-group">
@@ -165,17 +146,6 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
-
-                    <div class="contact-info">
-                        <h3>Direct Contact</h3>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:your-email@example.com">[your-email@example.com]</a></p>
-                        
-                        <div class="social-links">
-                            <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="[Your GitHub URL]" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="[Your Twitter/X URL]" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -184,7 +154,6 @@
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 [NxStrip]. All rights reserved.</p>
-            <p>Hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a> | Source on <a href="[Your GitHub Repo URL]" target="_blank">GitHub</a></p>
         </div>
     </footer>
 
