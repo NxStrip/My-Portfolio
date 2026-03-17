@@ -266,7 +266,49 @@ header {
 }
 
 /* =========================================
-   MY SKILLS (Screenshot 2 Style)
+   NEW STATS SECTION
+   ========================================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.stat-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: transform var(--transition), border-color var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.stat-card p {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* =========================================
+   MY SKILLS (Updated with Levels)
    ========================================= */
 .skills-columns { 
     display: grid; 
@@ -298,14 +340,31 @@ header {
     padding: 1rem; 
     margin-bottom: 0.8rem; 
     border-radius: 6px;
-    font-weight: 600; 
-    color: var(--text-muted);
     border: 1px solid var(--border-color);
     transition: transform var(--transition);
+    
+    /* New Flexbox settings to stack the text and level */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem; 
 }
 
 .skill-box:hover {
     transform: translateX(5px);
+}
+
+/* Text styles for the new skill spans */
+.skill-name {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.skill-level {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 400;
 }
 
 .border-cyan { border-left: 4px solid var(--cyan); }
@@ -313,7 +372,7 @@ header {
 .border-green { border-left: 4px solid var(--green); }
 
 /* =========================================
-   TECH STACK (Screenshot 3 Style)
+   TECH STACK 
    ========================================= */
 .tech-title-wrap { 
     display: flex; 
@@ -370,7 +429,7 @@ header {
 }
 
 /* =========================================
-   PROJECTS PAGE (Screenshot 4 Style)
+   PROJECTS PAGE
    ========================================= */
 .page-header { 
     text-align: left; 
@@ -431,7 +490,7 @@ header {
 }
 
 /* =========================================
-   CERTIFICATES PAGE (Screenshot 5 Style)
+   CERTIFICATES PAGE 
    ========================================= */
 .cert-title { 
     text-align: center; 
@@ -490,7 +549,7 @@ header {
 }
 
 .form-group textarea {
-    resize: vertical; /* Prevents user from breaking layout horizontally */
+    resize: vertical; 
 }
 
 .form-group input:focus, 
