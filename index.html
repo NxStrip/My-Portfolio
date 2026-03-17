@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[NxStrip] | Cybersecurity Portfolio</title>
+    
+    <meta name="description" content="NxStrip - 17-year-old self-taught Cybersecurity Researcher, Bug Bounty Hunter, and VAPT Specialist. Explore my red team portfolio, CTF achievements, and vulnerability research.">
+    <meta name="keywords" content="Cybersecurity Portfolio, Red Team, VAPT, Bug Bounty Hunter, Ethical Hacking, Penetration Testing, NxStrip">
+    <meta name="author" content="NxStrip">
+    
+    <title>NxStrip | Cybersecurity Portfolio</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
     <header id="header">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">[NxStrip]</a>
+                <a href="index.html">NxStrip</a>
             </div>
             <nav id="navbar">
                 <ul class="nav-links">
@@ -39,8 +47,8 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Hello, I'm <span class="accent">[NxStrip]</span></h1>
-                <p class="tagline">Cybersecurity Enthusiast | Linux Specialist | VAPT & Bug Bounty</p>
+                <h1>Hello, I'm <span class="accent">NxStrip</span></h1>
+                <p class="tagline">Cybersecurity Enthusiast | Linux Specialist | VAPT & Bug Bounty Hunter</p>
                 <div class="hero-buttons">
                     <a href="projects.html" class="btn btn-primary">View My Work</a>
                     <a href="index.html#contact" class="btn btn-secondary">Contact Me</a>
@@ -52,19 +60,20 @@
             <div class="section-container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
+                    
                     <div class="about-image">
-                        <div class="photo-placeholder">
-                            <span>[Your Photo]</span>
-                        </div>
+                        <img src="assets/Profile.jpg" alt="NxStrip Profile" style="width: 100%; border-radius: 50%; border: 2px solid var(--border-color); object-fit: cover; aspect-ratio: 1/1; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
                     </div>
+                    
                     <div class="about-text">
                         <p>
-                            I am a dedicated cybersecurity professional with a deep passion for understanding how systems work—and how they can be broken. My primary focus lies in Vulnerability Assessment and Penetration Testing (VAPT), Bug Bounty hunting, and securing network infrastructures.
+                            I am a <strong>17-year-old, self-taught cybersecurity researcher</strong> with a drive for understanding system internals and identifying vulnerabilities. My focus is on Vulnerability Assessment and Penetration Testing (VAPT), Bug Bounty hunting, with a strong emphasis on web application security and infrastructure assessment.
                         </p>
                         <p>
-                            With strong foundations in Linux environments and network protocols, I thrive in uncovering vulnerabilities and providing actionable solutions to mitigate risks. I actively participate in Capture The Flag (CTF) competitions to continuously sharpen my skills against real-world scenarios.
+                            With a strong foundation in Linux environments and network protocols, I specialize in uncovering flaws and implementing practical mitigation strategies. I stay sharp by leading teams in Capture The Flag (CTF) competitions and exploring the latest in ethical hacking.
                         </p>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -76,53 +85,28 @@
                     
                     <div class="skill-col">
                         <h3 class="col-title underline-cyan">Security</h3>
-                        <div class="skill-box border-cyan">Cybersecurity</div>
-                        <div class="skill-box border-cyan">Ethical Hacking</div>
-                        <div class="skill-box border-cyan">Network Security</div>
-                        <div class="skill-box border-cyan">VAPT</div>
-                        <div class="skill-box border-cyan">Cryptography</div>
+                        <div class="skill-box border-cyan">Vulnerability Assessment</div>
+                        <div class="skill-box border-cyan">Penetration Testing</div>
+                        <div class="skill-box border-cyan">Bug Bounty Hunting</div>
+                        <div class="skill-box border-cyan">Web Application Security</div>
+                        <div class="skill-box border-cyan">Mobile App Security</div>
                     </div>
 
                     <div class="skill-col">
                         <h3 class="col-title underline-purple">Programming & Scripting</h3>
                         <div class="skill-box border-purple">Bash</div>
-                        <div class="skill-box border-purple">Java</div>
-                        <div class="skill-box border-purple">C</div>
-                        <div class="skill-box border-purple">PowerShell</div>
                         <div class="skill-box border-purple">Python</div>
-                        <div class="skill-box border-purple">C++</div>
                     </div>
 
                     <div class="skill-col">
-                        <h3 class="col-title underline-green">Tools & Technologies</h3>
-                        <div class="skill-box border-green">AWS</div>
-                        <div class="skill-box border-green">Oracle SQL</div>
-                        <div class="skill-box border-green">MySQL</div>
-                        <div class="skill-box border-green">GitHub</div>
+                        <h3 class="col-title underline-green">Security Toolkit</h3>
+                        <div class="skill-box border-green">Burp Suite / OWASP ZAP</div>
+                        <div class="skill-box border-green">Nmap / Rustscan</div>
+                        <div class="skill-box border-green">Metasploit Framework</div>
+                        <div class="skill-box border-green">ffuf / Dirsearch</div>
+                        <div class="skill-box border-green">SQLmap / Ghauri</div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <section id="tech-stack" class="tech-stack">
-            <div class="section-container">
-                <div class="tech-title-wrap">
-                    <span class="code-tag">&lt;/Skills&gt;</span>
-                    <span class="line"></span>
-                </div>
-                <h3 class="tech-heading">Tech Stack</h3>
-                
-                <div class="tech-grid">
-                    <div class="tech-icon"><i class="fab fa-linux"></i></div>
-                    <div class="tech-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div class="tech-icon"><i class="fab fa-python"></i></div>
-                    <div class="tech-icon"><i class="fas fa-terminal"></i></div>
-                    <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
-                    <div class="tech-icon"><i class="fas fa-bug"></i></div>
-                    <div class="tech-icon"><i class="fab fa-aws"></i></div>
-                    <div class="tech-icon"><i class="fas fa-database"></i></div>
-                    <div class="tech-icon"><i class="fab fa-github"></i></div>
                 </div>
             </div>
         </section>
@@ -131,7 +115,10 @@
             <div class="section-container">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                    
+                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact">
+                        
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -146,6 +133,21 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
+
+                    <div class="contact-info" style="margin-top: 3rem; text-align: center;">
+                        <h3>Direct Reach</h3>
+                        <p>Email: <a href="mailto:NullTrace6767@proton.me" class="accent">NullTrace6767@proton.me</a></p>
+                        
+                        <div class="social-links" style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem;">
+                            <a href="https://github.com/NxStrip" target="_blank" title="GitHub">
+                                <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                            </a>
+                            <a href="#" target="_blank" title="Twitter/X">
+                                <i class="fab fa-twitter" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -153,7 +155,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 [NxStrip]. All rights reserved.</p>
+            <p>&copy; 2026 NxStrip. All rights reserved.</p>
         </div>
     </footer>
 
