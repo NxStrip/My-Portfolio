@@ -1,39 +1,43 @@
-// Mobile menu toggle functionality
+// Mobile menu toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
-const navItems = document.querySelectorAll('.nav-link');
-const header = document.getElementById('header');
 
-// Toggle mobile menu
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    
-    // Toggle hamburger icon between bars and times (X)
-    const icon = hamburger.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
-});
-
-// Close mobile menu when a link is clicked
-navItems.forEach(item => {
-    item.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
         const icon = hamburger.querySelector('i');
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
     });
+}
+
+// Dark/Light Mode Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+const themeIcon = themeToggleBtn.querySelector('i');
+
+// Check local storage for saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    htmlElement.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcon(newTheme);
 });
 
-// Add shadow to header on scroll for better visibility
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
+function updateIcon(theme) {
+    if (theme === 'light') {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
     } else {
-        header.classList.remove('scrolled');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
     }
-});
+}
