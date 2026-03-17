@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | [NxStrip]</title>
+    
+    <meta name="description" content="View and download the professional resume of NxStrip, a 17-year-old Cybersecurity Researcher and Bug Bounty Hunter.">
+    <meta name="keywords" content="NxStrip Resume, Cybersecurity CV, Penetration Tester Resume, Bug Bounty Portfolio">
+    <meta name="author" content="NxStrip">
+    
+    <title>NxStrip | Resume</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+
     <header id="header">
         <div class="nav-container">
-            <div class="logo"><a href="index.html">[NxStrip]</a></div>
+            <div class="logo">
+                <a href="index.html">NxStrip</a>
+            </div>
             <nav id="navbar">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link">Certificates</a></li>
                     <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
-                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="section-container" style="text-align: center;">
+    <main class="section-container" style="text-align: center; min-height: calc(100vh - var(--nav-height) - 100px); display: flex; flex-direction: column; justify-content: center;">
         <h2 class="section-title">Curriculum Vitae</h2>
         <p class="text-muted" style="margin-bottom: 3rem;">View my professional experience and academic background.</p>
 
-        <div class="resume-viewer" style="background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color); max-width: 800px; margin: 0 auto;">
+        <div class="resume-viewer" style="background: var(--card-bg); padding: 3rem 2rem; border-radius: 16px; border: 1px solid var(--border-color); max-width: 700px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
             <i class="fas fa-file-pdf" style="font-size: 5rem; color: var(--accent-color); margin-bottom: 2rem;"></i>
-            <h3>My Professional Resume</h3>
-            <p style="margin-bottom: 2rem;">Last updated: March 2026</p>
             
-            <div class="hero-buttons">
+            <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">My Professional Resume</h3>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Last updated: March 2026</p>
+            
+            <div class="hero-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="assets/resume.pdf" download class="btn btn-primary">
                     <i class="fas fa-download"></i> Download PDF
                 </a>
@@ -43,6 +64,12 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 NxStrip. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
