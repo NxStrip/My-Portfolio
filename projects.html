@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | [NxStrip]</title>
+    
+    <meta name="description" content="Explore the cybersecurity projects, CTF challenges, and vulnerability research conducted by NxStrip.">
+    <meta name="keywords" content="Cybersecurity Projects, CTF Challenges, Web Exploitation, Penetration Testing Portfolio, NxStrip">
+    <meta name="author" content="NxStrip">
+    
+    <title>NxStrip | Projects</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+
     <header id="header">
         <div class="nav-container">
-            <div class="logo"><a href="index.html">[NxStrip]</a></div>
+            <div class="logo">
+                <a href="index.html">NxStrip</a>
+            </div>
             <nav id="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html#home" class="nav-link">Home</a></li>
@@ -23,18 +34,23 @@
                 </ul>
             </nav>
             <div class="nav-actions">
-                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
-                <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="section-container">
+    <main class="section-container" style="min-height: calc(100vh - var(--nav-height) - 100px);">
         <div class="page-header">
             <span class="code-tag">&lt;/Projects&gt;</span>
         </div>
 
         <div class="project-list">
+            
             <article class="project-card-h">
                 <div class="project-info-h">
                     <h3>Cybersecurity Simulation</h3>
@@ -42,24 +58,32 @@
                     <a href="#" class="btn btn-secondary">Live View &rarr;</a>
                 </div>
                 <div class="project-img-h">
-                    <span>[Project Screenshot Placeholder]</span>
-                </div>
+                    <span>[Screenshot Placeholder]</span>
+                    </div>
             </article>
 
             <article class="project-card-h">
                 <div class="project-info-h">
                     <h3>Blitzstorm CTF - 2024</h3>
                     <p>Developed vulnerable web apps to simulate real-world flaws and improve bug hunting skills. Guided participants through complex security challenges.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                    
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="project-img-h">
-                    <span>[Project Screenshot Placeholder]</span>
-                </div>
+                    <span>[Screenshot Placeholder]</span>
+                    </div>
             </article>
+            
         </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 NxStrip. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
