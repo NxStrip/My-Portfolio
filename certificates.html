@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications | [NxStrip]</title>
+    
+    <meta name="description" content="View the cybersecurity certifications and credentials of NxStrip, including the Practical Network Penetration Tester (PNPT) from TCM Security.">
+    <meta name="keywords" content="NxStrip Certifications, PNPT, Cybersecurity Certificates, Penetration Testing Credentials, TCM Security">
+    <meta name="author" content="NxStrip">
+    
+    <title>NxStrip | Certificates</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+
     <header id="header">
         <div class="nav-container">
-            <div class="logo"><a href="index.html">[NxStrip]</a></div>
+            <div class="logo">
+                <a href="index.html">NxStrip</a>
+            </div>
             <nav id="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
                     <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
-                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="section-container">
+    <main class="section-container" style="min-height: calc(100vh - var(--nav-height) - 100px);">
         <div class="page-header">
             <span class="code-tag">&lt;/Certifications&gt;</span>
         </div>
@@ -36,16 +54,24 @@
         <div class="cert-card">
             <h3>Practical Network Penetration Tester (PNPT)</h3>
             <p>Certified on April 21, 2025 • Certificate #140626787</p>
-            <div class="project-img-h" style="margin-bottom: 2rem;">
+            
+            <div class="project-img-h" style="margin-bottom: 2rem; overflow: hidden;">
                 <span>[PNPT Certificate Image]</span>
-            </div>
-            <a href="#" class="btn btn-secondary">View Official Certificate</a>
+                </div>
+            
+            <a href="#" class="btn btn-secondary" target="_blank">View Official Certificate</a>
         </div>
 
         <div class="page-header" style="margin-top: 4rem; text-align: center;">
             <p class="text-muted">More certifications coming soon...</p>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 NxStrip. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
