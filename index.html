@@ -200,7 +200,6 @@
     <div class="contact-content">
         
         <form action="https://formspree.io/f/meerpzyn" method="POST" class="contact-form">
-            
             <input type="text" name="_gotcha" style="display:none" />
 
             <div class="form-group">
@@ -221,21 +220,29 @@
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
 
-        <div class="contact-info" style="margin-top: 3rem; text-align: center;">
-            <h3>Direct Reach</h3>
-            <p>Email: <a href="mailto:NullTrace6767@proton.me" class="accent">NullTrace6767@proton.me</a></p>
-                        
-                        <div class="social-links" style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem;">
-                            <a href="https://github.com/NxStrip" target="_blank" title="GitHub">
-                                <i class="fab fa-github" style="font-size: 1.5rem;"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
+        <div class="contact-info" style="margin-top: 4rem; text-align: center;">
+            <h3 style="margin-bottom: 1.5rem;">Direct Reach & Secure Comms</h3>
+            
+            <p style="margin-bottom: 0.5rem;">Email: <a href="mailto:NullTrace6767@proton.me" class="accent">NullTrace6767@proton.me</a></p>
+            
+            <p style="margin-bottom: 1.5rem;">Discord: 
+                <span id="discord-copy" class="accent" style="cursor: pointer; font-weight: 600;" onclick="copyDiscord()">
+                    nxstrip_0 <i class="far fa-copy" style="font-size: 0.9em; margin-left: 5px;"></i>
+                </span>
+            </p>
+
+            <button id="pgp-copy" class="btn btn-secondary" onclick="copyPGP()" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                <i class="fas fa-key"></i> Copy PGP Public Key
+            </button>
+            
+            <div class="social-links" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="https://github.com/NxStrip" target="_blank" title="GitHub">
+                    <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                </a>
             </div>
-        </section>
+        </div>
+        </div>
+</section>
     </main>
 
     <footer>
