@@ -598,3 +598,59 @@ footer {
         text-align: center; 
     }
 }
+/* =========================================
+   NEW COMPONENTS (RESUME & ENHANCED CONTACT)
+   ========================================= */
+
+/* Resume Page Card */
+.resume-viewer {
+    background: var(--card-bg);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+/* Contact Info Box */
+.contact-info {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-alt);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+/* Copy-to-Clipboard Interactions */
+#discord-copy {
+    transition: color var(--transition), transform var(--transition);
+    display: inline-block;
+}
+
+#discord-copy:hover {
+    color: var(--cyan);
+    transform: scale(1.05);
+}
+
+#pgp-copy {
+    transition: all var(--transition);
+}
+
+#pgp-copy:hover {
+    box-shadow: 0 0 15px rgba(13, 148, 136, 0.3); /* Subtle teal glow */
+}
+
+/* Achievements Border Utility */
+.stat-card-achievement {
+    border-top: 3px solid var(--orange-glow) !important;
+}
+
+/* Global Transition for copied states */
+.success-text {
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+}
