@@ -3,10 +3,6 @@
     { 
       "source": "/writeups", 
       "destination": "https://nxstrip-writeups.vercel.app/writeups.html" 
-    },
-    { 
-      "source": "/writeups/:path*", 
-      "destination": "https://nxstrip-writeups.vercel.app/:path*" 
     }
   ]
 }
