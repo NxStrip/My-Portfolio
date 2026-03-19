@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { 
+      "source": "/writeups", 
+      "destination": "https://nxstrip-writeups.vercel.app/writeups.html" 
+    },
+    { 
+      "source": "/writeups/:match*", 
+      "destination": "https://nxstrip-writeups.vercel.app/:match*" 
+    }
+  ]
+}
