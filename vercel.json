@@ -5,8 +5,8 @@
       "destination": "https://nxstrip-writeups.vercel.app/writeups.html" 
     },
     { 
-      "source": "/writeups/:match*", 
-      "destination": "https://nxstrip-writeups.vercel.app/:match*" 
+      "source": "/writeups/:path*", 
+      "destination": "https://nxstrip-writeups.vercel.app/:path*" 
     }
   ]
 }
