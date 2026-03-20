@@ -9,9 +9,9 @@
     --text-main: #f8fafc;
     --text-muted: #a1a1aa;
     
-    /* Accents */
-    --accent-color: #0d9488; 
-    --accent-hover: #0f766e;
+    /* Accents  */
+    --accent-color: #00bfa5; 
+    --accent-hover: #00897b;
     --border-color: #27272a;
     
     /* Skill Colors */
@@ -726,4 +726,19 @@ footer {
 
 .hero h1 .accent {
     color: var(--accent-color);
+}
+
+/* Fix for Project Banner scaling */
+.project-img-h img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole banner is visible without cropping */
+    background: #000;    /* Fills any empty space with black to match the banner */
+    border-radius: 8px;
+}
+
+/* Optional: Slight zoom effect on hover */
+.project-card-h:hover .project-img-h img {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
