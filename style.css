@@ -660,6 +660,17 @@ footer {
         text-align: center;
         gap: 2rem; 
     }
+
+    /* --- THE FIX FOR IMAGE --- */
+    .project-img-h {
+        width: 100%;
+        min-height: 200px; 
+        order: -1;         
+    }
+
+    .project-img-h img {
+        object-fit: cover; 
+    }
 }
 
 /* ============================================================
