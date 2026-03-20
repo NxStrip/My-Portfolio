@@ -705,3 +705,25 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
+
+/* =========================================
+   LOGO & BRANDING ALIGNMENT
+   ========================================= */
+
+/* Logo: Nx (White) Strip (Teal) */
+.logo a {
+    color: var(--text-main) !important; /* Forces 'Nx' to stay white/main text color */
+}
+
+.logo a span {
+    color: var(--accent-color) !important; /* Forces 'Strip' to match your teal accent */
+}
+
+/* Hero: Hello, I'm Nx (White) Strip (Teal) */
+.hero h1 {
+    color: var(--text-main);
+}
+
+.hero h1 .accent {
+    color: var(--accent-color);
+}
