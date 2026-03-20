@@ -661,3 +661,47 @@ footer {
         gap: 2rem; 
     }
 }
+
+/* ============================================================
+   CUSTOM SCROLLBARS (Code Blocks & Global)
+   ============================================================ */
+
+/* Target the scrollbar for code blocks specifically */
+.markdown-body pre::-webkit-scrollbar {
+    height: 8px; /* Height of horizontal scrollbar */
+    width: 8px;  /* Width of vertical scrollbar */
+}
+
+.markdown-body pre::-webkit-scrollbar-track {
+    background: #000; /* Matches your code block background */
+    border-radius: 8px;
+}
+
+.markdown-body pre::-webkit-scrollbar-thumb {
+    background: var(--border); /* Subtle grey thumb */
+    border-radius: 8px;
+    border: 2px solid #000; /* Creates a "padding" effect */
+}
+
+.markdown-body pre::-webkit-scrollbar-thumb:hover {
+    background: var(--accent); /* Turns blue when you hover over it */
+}
+
+/* Optional: Apply a slim theme-matching scrollbar to the whole page */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+    border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
