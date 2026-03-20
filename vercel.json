@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    { 
-      "source": "/writeups", 
-      "destination": "https://nxstrip-writeups.vercel.app/writeups.html" 
-    }
-  ]
-}
