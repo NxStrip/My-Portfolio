@@ -660,28 +660,37 @@ footer {
         gap: 2rem; 
     }
 
-    /* FIX: Remove padding on the card so image can be wider */
+    /* FIX: Center the text and format the card layout */
     .project-card-h {
         flex-direction: column;
-        padding: 1rem; /* Reduced from 2rem */
+        padding: 1.5rem; 
         gap: 1.5rem;
+        text-align: center; /* Centers the title, tags, and description */
     }
 
-    /* FIX: Make the image container fill the space */
+    /* Align nested tags perfectly to center */
+    .project-info-h {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    /* FIX: Image goes to bottom and fills space naturally without gaps */
     .project-img-h {
         width: 100%;
-        min-height: 200px;
-        order: -1; /* Image stays on top */
+        min-height: auto; /* Overrides the desktop minimum height that caused black bars */
+        order: 2; /* Puts the image at the bottom, after the text */
         margin: 0;
-        display: block; /* Removes flex centering that causes gaps */
+        display: flex;
+        background-color: transparent; /* Removes background filling behind image */
     }
 
-.project-img-h img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 8px;
-   }
+    .project-img-h img {
+        width: 100%;
+        height: auto; /* Lets the image size itself correctly to avoid bars */
+        object-fit: cover; 
+        border-radius: 8px;
+    }
 }
 
 /* ============================================================
