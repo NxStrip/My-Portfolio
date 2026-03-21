@@ -116,3 +116,22 @@ function copyPGP() {
         }, 3000);
     });
 }
+
+function isReloadNavigation() {
+    const navigationEntry = performance.getEntriesByType('navigation')[0];
+    if (navigationEntry) return navigationEntry.type === 'reload';
+
+    return performance.navigation && performance.navigation.type === 1;
+}
+
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', () => {
+    if (!isReloadNavigation()) return;
+
+    requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+    });
+});
